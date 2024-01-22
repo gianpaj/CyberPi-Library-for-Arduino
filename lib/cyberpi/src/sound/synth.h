@@ -101,6 +101,10 @@ class MSynth
     {
       volume[voice] = vol;
     }
+    int getVolume(unsigned char voice)
+    {
+      return volume[voice];
+    }
     //*********************************************************************
     //  Setup all voice parameters in MIDI range
     //  voice[0-3],wave[0-13],pitch[0-127],envelope[0-4],length[0-127],mod[0-127:64=no mod]

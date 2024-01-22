@@ -360,6 +360,10 @@ void CyberPi::set_pitch(uint8_t channel, uint8_t pitch,uint8_t time)
 {
     _audio.addNote(channel,pitch,time);
 }
+int CyberPi::get_vol(uint8_t channel) 
+{
+    return _audio.getVolume(channel);
+}
 void CyberPi::set_instrument(uint8_t instrument)
 {
     _audio.setInstrument(instrument);

@@ -83,6 +83,7 @@ class CyberPi
         void set_pitch(uint8_t channel, uint8_t pitch,uint8_t time);
         void set_instrument(uint8_t instrument);
         int get_loudness();
+        int get_vol(uint8_t channel);
         void on_microphone_data(data_callback func);
         void on_sound_data(data_callback func);
         uint8_t* malloc(uint32_t len);
